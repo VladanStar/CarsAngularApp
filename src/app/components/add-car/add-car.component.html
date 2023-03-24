@@ -1,1 +1,52 @@
-<p>add-car works!</p>
+<form #f="ngForm" (ngSubmit)="addCar(f)">
+
+    <div class="mb-3">
+<label for="tip">*Tip</label>
+<input title="#" ngModel type="text" id="tip" #tip="ngModel" name="tip" class="form-control"
+required
+[ngClass]="{'is-invalid':tip.invalid && tip.touched}" >
+    </div>
+    <!-- <div [hidden]="!naziv.errors?.['required']" class="invalid-feedback">Naziv je obavezan</div> -->
+    <div class="mb-3">
+        <label for="proizvodjac">*Proizvodjac</label>
+        <input  ngModel type="text" name="proizvodjac" #proizvodjac="ngModel" id="proizvodjac" class="form-control"
+         required
+         [ngClass]="{'is-invalid':proizvodjac.invalid && proizvodjac.touched}" >
+    </div>
+
+
+    <div class="mb-3">
+      <label for="slika">Slika Automobila</label>
+      <input title="$" ngModel type="string" id="slika" name="img" #img="ngModel" class="form-control" placeholder="unesite copy image address">
+  </div>
+
+
+    <div class="mb-3">
+        <label for="marka">*Marka</label>
+        <input  ngModel type="text" id="marka" name="marka" #marka="ngModel" class="form-control"
+        required
+        [ngClass]="{'is-invalid':marka.invalid && marka.touched}">
+    </div>
+    <div class="mb-3">
+        <label for="izdavac">*Kubikaza</label>
+        <input   ngModel type="text" name="kubikaza"  id="kubikaza" #kubikaza="ngModel" class="form-control"
+        required
+        [ngClass]="{'is-invalid':kubikaza.invalid && kubikaza.touched}">
+    </div>
+    <div class="mb-3">
+        <label for="broj_sedista">Broj Sedista</label>
+        <input ngModel type="number" id="broj_sedista"  name="broj_sedista" #broj_sedista="ngModel" class="form-control" >
+    </div>
+    <div class="mb-3">
+        <label for="godina_proizvodnje">Godina Proizvodnje</label>
+        <input ngModel type="number" id="godina_proizvodnje" name="godina_proizvodnje" #godina_proizvodnje="ngModel" class="form-control" >
+    </div>
+    <div class="mb-3">
+        <label for="broj_motora">**Broj motora</label>
+        <input  ngModel type="number" id="broj_motora"  name="broj_motora"  #broj_motora="ngModel" class="form-control"
+        required
+        [ngClass]="{'is-invalid':broj_motora.invalid && broj_motora.touched}"
+        >
+    </div>
+   <button class="btn btn-success" type="submit">Add Book</button>
+</form>
