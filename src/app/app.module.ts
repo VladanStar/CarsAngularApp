@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import {AngularFireModule} from "@angular/fire/compat"
 // import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
+import { CarComponent } from './components/car/car.component';
 // import { provideAuth,getAuth } from '@angular/fire/auth';
 // import { provideDatabase,getDatabase } from '@angular/fire/database';
 // import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CarComponent
   ],
   imports: [
     BrowserModule,
