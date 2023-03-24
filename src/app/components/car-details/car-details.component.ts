@@ -19,11 +19,11 @@ export class CarDetailsComponent implements OnInit {
    ngOnInit(): void {
     this.id= this.route.snapshot.paramMap.get("id")
     if(this.id){
- 
-    
+
+
     this.carServis.get(this.id).subscribe(p => {
      this.car = p;
-     console.log(this.car);  
+     console.log(this.car);
    });
  }
    }
@@ -32,8 +32,8 @@ export class CarDetailsComponent implements OnInit {
      if(confirm("Da li ste sigurni?")){
        if(id){
      this.carServis.delete(this.id);
-     this.router.navigate(["/"])
- 
+     this.router.navigate(["f"])
+
      }
    }
  }

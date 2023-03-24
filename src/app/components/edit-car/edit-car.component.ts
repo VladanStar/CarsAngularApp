@@ -12,7 +12,7 @@ import { CarService } from 'src/app/services/car.service';
 export class EditCarComponent implements OnInit {
   id:any;
  car:Car = {
-   
+
     broj_motora:"",
     broj_sedista:0,
     godina_proizvodnje:0,
@@ -46,7 +46,7 @@ export class EditCarComponent implements OnInit {
  let id =this.id as string;
 this.carServis.update(id, f.value);
 window.alert('Automobil je editovana')
-this.router.navigate(["/"])
+this.router.navigate(["f"])
 // f.reset();
   }
 

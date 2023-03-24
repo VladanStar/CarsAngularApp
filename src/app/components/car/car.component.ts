@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Car } from 'src/app/models/car';
 import { CarService } from 'src/app/services/car.service';
 import * as Papa from 'papaparse';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-car',
@@ -13,16 +14,19 @@ export class CarComponent implements OnInit {
   page: number = 1;
   p: any;
   searchText:any;
-  
+
 
   cars:Car[]=[];
-  constructor(private carService:CarService){}
+  constructor(private carService:CarService,
+private auth:AuthService
+    ){}
   ngOnInit(): void {
     this.carService.getAll().subscribe(p=>this.cars= p)
-    
+    this.auth.updateLoginStatus(false);
+
   }
 
-  
+
   sortTip(): void {
     this.cars.sort((a: Car, b: Car): number => {
       if (a.tip && b.tip) {

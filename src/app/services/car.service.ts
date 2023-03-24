@@ -16,7 +16,7 @@ export class CarService {
 
   getAll(): Observable<Car[]> {
     return this.db
-      .list<Car>('cars')
+      .list<Car>('/cars')
       .snapshotChanges()
       .pipe(
         map((x) =>
