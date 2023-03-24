@@ -7,9 +7,10 @@ import { AddCarComponent } from './components/add-car/add-car.component';
 
 const routes: Routes = [
   { path: '', component: CarComponent },
+  { path: 'car/add', component: AddCarComponent },
   { path: 'car/:id', component: CarDetailsComponent },
   { path: 'car/edit/:id', component: EditCarComponent },
-  { path: 'car/add', component: AddCarComponent },
+  
 ];
 
 @NgModule({
