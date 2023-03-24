@@ -15,6 +15,8 @@ import { CarDetailsComponent } from './components/car-details/car-details.compon
 import { EditCarComponent } from './components/edit-car/edit-car.component';
 import { FormsModule } from '@angular/forms';
 import { AddCarComponent } from './components/add-car/add-car.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 // import { provideAuth,getAuth } from '@angular/fire/auth';
 // import { provideDatabase,getDatabase } from '@angular/fire/database';
 // import { provideFirestore,getFirestore } from '@angular/fire/firestore';
@@ -27,7 +29,9 @@ import { AddCarComponent } from './components/add-car/add-car.component';
     FooterComponent,
     CarDetailsComponent,
     EditCarComponent,
-    AddCarComponent
+    AddCarComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
