@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
     <div class="row">
         <input   type="text" class="form-control my-2" placeholder="serach">
         <table class="my-5 table table-hover table-striped">
@@ -30,4 +30,39 @@
             </tbody>
         </table>
     </div>
-</div> 
+</div>  -->
+<div class="container my-5" id="elem">
+    <div class="row">
+       <!-- <input   type="text" class="form-control border border-primary my-5" placeholder="serach"> -->
+        <!-- <input   [(ngModel)]="searchText" type="text" class="form-control border border-primary my-5" placeholder="serach"> -->
+        <!-- <button class="add-button" routerLink="add" ><i class="bi bi-person-fill-add">ADD</i></button> -->
+      <!-- <button  class="btn btn-warning" type="button" (click)="sortNaziv()">Sortiraj po Nazivu</button>
+      <button  class="btn btn-warning" type="button" (click)="sortAutor()">Sortiraj po Autoru</button>
+      <button  class="btn btn-warning" type="button" (click)="sortZanr()">Sortiraj po Zanru</button>
+      <button  class="btn btn-warning" type="button" (click)="sortGodina()">Sortiraj po Godini</button> -->
+      <hr>
+      <hr>
+      <div
+        class="col-lg-4 cardy"
+        *ngFor="let car of cars  | paginate: { itemsPerPage: 6, currentPage: page, totalItems: totalLength };let i = index"
+      >
+        <div class="playerbox mt-3 mb-3">
+<img src="{{car.img}}" alt="">
+        <h2>{{car.tip}}</h2>
+          <p>{{ car.proizvodjac}}</p>
+          <p>{{car.marka}}</p>
+
+          <p>{{ car.godina_proizvodnje }}</p>
+
+          <p> <a class="btn btn-warning my-4" routerLink="car/{{car.id}}">Details</a></p>
+          <br />
+
+        </div>
+
+      </div>
+      <pagination-controls class="text-center pag my-5" (pageChange)="page = $event"></pagination-controls>
+    </div>
+    <!-- <button type="button" class="btn btn-danger" (click)="exportToCsv()">Export to CSV</button> -->
+    <!-- <button type="button" class="btn btn-danger" (click)="exportToPdf()">Export to PDF</button> -->
+     <!-- <button type="button" class="btn btn-danger" (click)="exportToPdf()">Export to PDF</button>  -->
+</div>
