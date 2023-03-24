@@ -25,4 +25,21 @@ export class CarService {
         )
       );
   }
+  get(id: string): Observable<Car> {
+    return this.db
+      .object<Car>('/cars/' + id)
+      .snapshotChanges()
+      .pipe(
+        map((x: any) => ({ id: x.payload?.key, ...(x.payload.val() as Car) }))
+      );
+  }
+  update(CarId: string, Car: Car): void {
+    this.db.object<Car>('/cars/' + CarId).update(Car);
+  }
+  add(Car: Car) {
+    this.db.list('/cars').push(Car);
+  }
+  delete(carId:any) {
+    this.db.object<Car>('/cars/'+carId).remove()
+  }
 }
