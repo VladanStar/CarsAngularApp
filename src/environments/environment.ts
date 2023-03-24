@@ -13,6 +13,15 @@ export const environment = {
   messagingSenderId: "999739176547",
   appId: "1:999739176547:web:0609e107bb63a0285aaa56"
   },
+  firebaseConfig: {
+     apiKey: "AIzaSyDcQPNe6buw4v0YHDDI38m2t3lHGOYinvY",
+  authDomain: "cars-angular-8aedf.firebaseapp.com",
+  databaseURL: "https://cars-angular-8aedf-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "cars-angular-8aedf",
+  storageBucket: "cars-angular-8aedf.appspot.com",
+  messagingSenderId: "999739176547",
+  appId: "1:999739176547:web:0609e107bb63a0285aaa56"
+  }
 
 };
 
