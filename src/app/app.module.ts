@@ -11,6 +11,7 @@ import { NavComponent } from './shared/nav/nav.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { CarDetailsComponent } from './components/car-details/car-details.component';
+import { EditCarComponent } from './components/edit-car/edit-car.component';
 // import { provideAuth,getAuth } from '@angular/fire/auth';
 // import { provideDatabase,getDatabase } from '@angular/fire/database';
 // import { provideFirestore,getFirestore } from '@angular/fire/firestore';
@@ -21,7 +22,8 @@ import { CarDetailsComponent } from './components/car-details/car-details.compon
     CarComponent,
     NavComponent,
     FooterComponent,
-    CarDetailsComponent
+    CarDetailsComponent,
+    EditCarComponent
   ],
   imports: [
     BrowserModule,
