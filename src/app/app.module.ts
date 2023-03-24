@@ -14,6 +14,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { CarDetailsComponent } from './components/car-details/car-details.component';
 import { EditCarComponent } from './components/edit-car/edit-car.component';
 import { FormsModule } from '@angular/forms';
+import { AddCarComponent } from './components/add-car/add-car.component';
 // import { provideAuth,getAuth } from '@angular/fire/auth';
 // import { provideDatabase,getDatabase } from '@angular/fire/database';
 // import { provideFirestore,getFirestore } from '@angular/fire/firestore';
@@ -25,7 +26,8 @@ import { FormsModule } from '@angular/forms';
     NavComponent,
     FooterComponent,
     CarDetailsComponent,
-    EditCarComponent
+    EditCarComponent,
+    AddCarComponent
   ],
   imports: [
     BrowserModule,
