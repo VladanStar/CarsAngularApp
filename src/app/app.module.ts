@@ -9,6 +9,9 @@ import { environment } from '../environments/environment';
 import { CarComponent } from './components/car/car.component';
 import { NavComponent } from './shared/nav/nav.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { CarDetailsComponent } from './components/car-details/car-details.component';
+import { EditCarComponent } from './components/edit-car/edit-car.component';
 // import { provideAuth,getAuth } from '@angular/fire/auth';
 // import { provideDatabase,getDatabase } from '@angular/fire/database';
 // import { provideFirestore,getFirestore } from '@angular/fire/firestore';
@@ -18,11 +21,14 @@ import { FooterComponent } from './shared/footer/footer.component';
     AppComponent,
     CarComponent,
     NavComponent,
-    FooterComponent
+    FooterComponent,
+    CarDetailsComponent,
+    EditCarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgxPaginationModule,
     AngularFireModule.initializeApp(environment.firebase),
     // provideFirebaseApp(() => initializeApp(environment.firebase)),
     // provideAuth(() => getAuth()),

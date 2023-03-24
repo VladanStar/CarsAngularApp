@@ -1,0 +1,35 @@
+<div class="row">
+<div class="col-4">
+<div class="card" *ngIf="car">
+  
+    <a routerLink="/" class="btn btn-sm btn-secondary mb-3 back"  >Back</a>
+    <h3 class="card-header">{{car.tip}}</h3>
+    <!-- <h4>{{car.naziv}}</h4> -->
+    <div class="card-body">
+        <ul class="list-group">
+            <li class="list-group-item">Proizvodjac: {{car.proizvodjac}}</li>
+            <li class="list-group-item">Marka: {{car.marka}}</li>
+            <li class="list-group-item">Broj Sedista: {{car.broj_sedista}}</li>
+            <li class="list-group-item">Godina Proizvodnje: {{car.godina_proizvodnje}}</li>
+            <li class="list-group-item">Broj konjskih snaga: {{car.konjskih_snaga}}</li>
+            <li class="list-group-item">Kubikaza ccm: {{car.kubikaza}}</li>
+            <!-- <li>{{car.id}}</li> -->
+        </ul>
+    </div>
+    <div class="card-footer">
+        <div class="btn-group">
+            <a routerLink="/car/edit/{{car.id}}" class="btn btn-info">Edit</a>
+            <button class="btn btn-danger" (click)="deleteCar()">Delete</button>
+
+        </div>
+    </div>
+</div>
+
+</div>
+<div class="col-8">
+    <div>
+        <img src="{{car.img}}" alt="">
+    </div>
+
+</div>
+</div>

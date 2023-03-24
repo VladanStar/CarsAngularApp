@@ -8,6 +8,10 @@ import { CarService } from 'src/app/services/car.service';
   styleUrls: ['./car.component.css']
 })
 export class CarComponent implements OnInit {
+  totalLength: any;
+  page: number = 1;
+  p: any;
+  
 
   cars:Car[]=[];
   constructor(private carService:CarService){}
