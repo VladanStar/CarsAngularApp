@@ -9,6 +9,7 @@ import { CarService } from 'src/app/services/car.service';
   styleUrls: ['./car-details.component.css']
 })
 export class CarDetailsComponent implements OnInit {
+
   id:any;
 
   car:Car={}
@@ -36,5 +37,4 @@ export class CarDetailsComponent implements OnInit {
      }
    }
  }
-
 }

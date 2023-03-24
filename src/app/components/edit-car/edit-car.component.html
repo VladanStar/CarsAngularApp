@@ -1,1 +1,33 @@
 
+<form #f="ngForm" (ngSubmit)="updateCar(f)">
+
+    <div class="mb-3">
+<label for="tip">Tip</label>
+<input  title="#f" [(ngModel)]="car.tip" type="text" id="tip" name="tip" class="form-control" >
+    </div>
+    <div class="mb-3">
+        <label for="proizvodjac">Proizvodjac</label>
+        <input  [(ngModel)]="car.proizvodjac" type="text" name="proizvodjac" id="proizvodjac" class="form-control" >
+    </div>
+    <div class="mb-3">
+        <label for="marka">Marka</label>
+        <input  [(ngModel)]="car.marka" type="text" id="marka" name="marka" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="godina_proizvodnje">Godina Proizvodnje</label>
+        <input   [(ngModel)]="car.godina_proizvodnje" type="text" name="godina_proizvodnje"  id="godina_proizvodnje" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="brojstr">Broj Sedista</label>
+        <input [(ngModel)]="car.broj_sedista" type="number" id="brojstr"  name="broj_sedista" class="form-control" >
+    </div>
+    <div class="mb-3">
+        <label for="godIz">kubikaza</label>
+        <input [(ngModel)]="car.kubikaza" type="number" id="godIz" name="kubikaza" class="form-control" >
+    </div>
+    <div class="mb-3">
+        <label for="konjskih_snaga">konjskih_snaga</label>
+        <input  [(ngModel)]="car.konjskih_snaga" type="number" id="konjskih_snaga"  name="konjskih_snaga" class="form-control" >
+    </div>
+   <button class="btn btn-success" type="submit">Edit car</button>
+</form>
