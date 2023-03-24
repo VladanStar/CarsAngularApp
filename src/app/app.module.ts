@@ -7,6 +7,8 @@ import {AngularFireModule} from "@angular/fire/compat"
 // import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { CarComponent } from './components/car/car.component';
+import { NavComponent } from './shared/nav/nav.component';
+import { FooterComponent } from './shared/footer/footer.component';
 // import { provideAuth,getAuth } from '@angular/fire/auth';
 // import { provideDatabase,getDatabase } from '@angular/fire/database';
 // import { provideFirestore,getFirestore } from '@angular/fire/firestore';
@@ -14,7 +16,9 @@ import { CarComponent } from './components/car/car.component';
 @NgModule({
   declarations: [
     AppComponent,
-    CarComponent
+    CarComponent,
+    NavComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
