@@ -1,4 +1,5 @@
 export interface Car {
+    id:string;
     broj_motora?:string;
     broj_sedista?:number;
     godina_proizvodnje?:number;
