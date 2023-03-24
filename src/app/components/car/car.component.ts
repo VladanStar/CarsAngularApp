@@ -12,7 +12,8 @@ export class CarComponent implements OnInit {
   totalLength: any;
   page: number = 1;
   p: any;
-  searchText: any;
+  searchText:any;
+  
 
   cars:Car[]=[];
   constructor(private carService:CarService){}

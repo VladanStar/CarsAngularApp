@@ -12,14 +12,7 @@ import { CarService } from 'src/app/services/car.service';
 export class EditCarComponent implements OnInit {
   id:any;
  car:Car = {
-    // naziv: '',
-    // autor: '',
-    // zanr: '',
-    // izdavac: '',
-    // broj_stranica: 0,
-    // godina_izdavanja: 0,
-    // ISBN:0
-    id:'',
+   
     broj_motora:"",
     broj_sedista:0,
     godina_proizvodnje:0,

@@ -1,14 +1,9 @@
-/* img {
-    width: 50px;
-    height: 50px;
+body {
+    height: 100vh;
 }
-.glava {
-    background-color:#d20303 !important;
-    
-} */
 .container {
     background: linear-gradient(to top, #d20303 35%, #600606 65%) !important;
-   
+  
   }
   .playerbox {
     margin-top: 15px;
@@ -30,13 +25,21 @@
     object-fit: cover;
     border-radius: 15px;
     border: 2px solid red;
+    position: absolute;
+    top: 50px;
+    right: 50px;
   }
   .cardy {
     background: linear-gradient(to top, #f15a5a 35%, #c02828 65%) !important;
     border-radius: 10%;
+    margin:10px auto;
+    width: 30%;
     /* margin: auto; */
    
-    
+  }
+  .search {
+    width: 70%;
+    margin: auto;
   }
   .playerbox h1 {
     font-size: 18px;
@@ -59,11 +62,7 @@
     border: 2px solid var(--primary-color);
     margin: 15px;
   }
-  img {
-    position: absolute;
-    top: 50px;
-    right: 50px;
-  }
+ 
   .btn {
     width: 20%;
     margin: auto;

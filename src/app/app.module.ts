@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {AngularFireModule} from "@angular/fire/compat"
 // import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { environment } from '../environments/environment';
 import { CarComponent } from './components/car/car.component';
 import { NavComponent } from './shared/nav/nav.component';
@@ -31,6 +32,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     NgxPaginationModule,
     FormsModule,
+    Ng2SearchPipeModule,
     AngularFireModule.initializeApp(environment.firebase),
     // provideFirebaseApp(() => initializeApp(environment.firebase)),
     // provideAuth(() => getAuth()),

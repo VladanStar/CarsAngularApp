@@ -34,7 +34,9 @@
 <div class="container my-5" id="elem">
     <div class="row">
         <!-- <input   type="text" class="form-control border border-primary my-5" placeholder="serach"> -->
-        <input   [(ngModel)]="searchText" type="text" class="form-control border border-primary my-5" placeholder="serach">
+        <input   [(ngModel)]="searchText" type="text" class=" search form-control border border-primary my-5" placeholder="serach">
+        <hr>
+        <hr>
         <!-- <button class="add-button" routerLink="add" ><i class="bi bi-person-fill-add">ADD</i></button> -->
         <button class="btn btn-warning" type="button" (click)="sortTip()">Sortiraj po Tipu</button>
         <button class="btn btn-warning" type="button" (click)="sortProizvodjac()">Sortiraj po Proizvodjacu</button>
@@ -43,7 +45,7 @@
             <hr>
             <hr>
             <div class="col-lg-4 cardy"
-                *ngFor="let car of cars  | paginate: { itemsPerPage: 6, currentPage: page, totalItems: totalLength };let i = index">
+                *ngFor="let car of cars | filter : searchText | paginate: { itemsPerPage: 6, currentPage: page, totalItems: totalLength };let i = index">
                 <div class="playerbox mt-3 mb-3">
                     <img src="{{car.img}}" alt="slika">
                     <h2>{{car.tip}}</h2>
