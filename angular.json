@@ -91,6 +91,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "carsApp:build:production",
+            "firebaseProject": "cars-angular-8aedf",
+            "firebaseHostingSite": "cars-angular-8aedf"
+          }
         }
       }
     }

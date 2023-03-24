@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "cars-angular-8aedf": {
+      "hosting": {
+        "carsApp": [
+          "cars-angular-8aedf"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "cars-angular-8aedf"
+  }
+}
