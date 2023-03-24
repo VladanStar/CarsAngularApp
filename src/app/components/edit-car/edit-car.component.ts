@@ -48,7 +48,7 @@ export class EditCarComponent implements OnInit {
 
 
   }
-  updateBook(f:NgForm){
+  updateCar(f:NgForm){
 // console.log(f.value)
  let id =this.id as string;
 this.carServis.update(id, f.value);

@@ -12,6 +12,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { CarDetailsComponent } from './components/car-details/car-details.component';
 import { EditCarComponent } from './components/edit-car/edit-car.component';
+import { FormsModule } from '@angular/forms';
 // import { provideAuth,getAuth } from '@angular/fire/auth';
 // import { provideDatabase,getDatabase } from '@angular/fire/database';
 // import { provideFirestore,getFirestore } from '@angular/fire/firestore';
@@ -29,6 +30,7 @@ import { EditCarComponent } from './components/edit-car/edit-car.component';
     BrowserModule,
     AppRoutingModule,
     NgxPaginationModule,
+    FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     // provideFirebaseApp(() => initializeApp(environment.firebase)),
     // provideAuth(() => getAuth()),
