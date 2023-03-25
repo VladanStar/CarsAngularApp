@@ -9,16 +9,14 @@ import { LoginComponent } from './components/login/login.component';
 import { VerifyMailComponent } from './components/verify-mail/verify-mail.component';
 
 const routes: Routes = [
-  {path: '', redirectTo:'login', pathMatch:'full'},
-  {path: 'login', component : LoginComponent},
-
-  {path: 'register', component : RegisterComponent},
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'verify-mail', component: VerifyMailComponent },
   { path: 'f', component: CarComponent },
-  {path: 'verify-mail', component : VerifyMailComponent},
   { path: 'car/add', component: AddCarComponent },
   { path: 'f/car/:id', component: CarDetailsComponent },
   { path: 'car/edit/:id', component: EditCarComponent },
-
 ];
 
 @NgModule({
