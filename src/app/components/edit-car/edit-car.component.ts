@@ -38,8 +38,6 @@ export class EditCarComponent implements OnInit {
     console.log(this.car);
   });
 }
-
-
   }
   updateCar(f:NgForm){
 // console.log(f.value)
