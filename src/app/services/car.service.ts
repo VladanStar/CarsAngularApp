@@ -11,9 +11,6 @@ export class CarService {
 
   constructor(private db :AngularFireDatabase) { }
 
-
-
-
   getAll(): Observable<Car[]> {
     return this.db
       .list<Car>('/cars')
